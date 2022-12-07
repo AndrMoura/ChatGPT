@@ -133,7 +133,7 @@ class Chatbot:
     # Gets the chat response
     def get_chat_response(self, prompt, output="text") -> dict or None:
         data = {
-            "action": "next",
+            "action": "variant",
             "messages": [
                 {
                     "id": str(generate_uuid()),
